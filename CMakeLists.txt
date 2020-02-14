@@ -18,32 +18,8 @@ set (SWARMIO_SUBPROJECT_TARGET_ARGS
     "-DCMAKE_MODULE_PATH=${CMAKE_CURRENT_SOURCE_DIR}/cmake/packages"
 )
 
-#setting clang as compiler
-set (CMAKE_C_COMPILER 
-            "/usr/bin/clang")
-set (CMAKE_C_FLAGS
-                "-Wall -std=c99")
-set (CMAKE_C_FLAGS_DEBUG 
-         "-g")
-set (CMAKE_C_FLAGS_MINSIZEREL
-     "-Os -DNDEBUG")
-set (CMAKE_C_FLAGS_RELEASE
-        "-O4 -DNDEBUG")
-set (CMAKE_C_FLAGS_RELWITHDEBINFO 
-	"-O2 -g")
-
-set (CMAKE_CXX_COMPILER   
-          "/usr/bin/clang++")
-set (CMAKE_CXX_FLAGS   
-             "-Wall")
-set (CMAKE_CXX_FLAGS_DEBUG  
-        "-g")
-set (CMAKE_CXX_FLAGS_MINSIZEREL 
-    "-Os -DNDEBUG")
-set (CMAKE_CXX_FLAGS_RELEASE   
-     "-O4 -DNDEBUG")
-set (CMAKE_CXX_FLAGS_RELWITHDEBINFO 
-	"-O2 -g")
+#setting gcc as compiler
+set (SWARMIO_PREFER_GCC ON)
 
 # If a verbose makefile was requested, pass it on to subprojects
 if (CMAKE_VERBOSE_MAKEFILE)
