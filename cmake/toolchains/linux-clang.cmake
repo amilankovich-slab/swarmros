@@ -1,6 +1,6 @@
 # Tools
-set(CMAKE_C_COMPILER clang)
-set(CMAKE_CXX_COMPILER clang++)
+set(CMAKE_C_COMPILER "/usr/bin/clang")
+set(CMAKE_CXX_COMPILER "/usr/bin/clang++")
 
 # Set target architecture
 if (DEFINED SWARMIO_TARGET_ARCHITECTURE)
