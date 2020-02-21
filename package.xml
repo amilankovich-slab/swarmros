@@ -20,7 +20,10 @@
   <build_depend>std_msgs</build_depend>
   <build_depend>roslib</build_depend>
   <build_depend>git</build_depend> 
-  <build_depend>clang-format</build_depend> 
+  <build_depend>clang</build_depend> 
+  <build_depend>multistrap</build_depend> 
+  <build_depend>g++-5-arm-linux-gnueabihf</build_depend> 
+  <build_depend>g++-5-multilib</build_depend> 
   <exec_depend>roscpp</exec_depend>
   <exec_depend>rosconsole</exec_depend>
   <exec_depend>std_msgs</exec_depend>
