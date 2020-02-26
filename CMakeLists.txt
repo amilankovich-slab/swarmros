@@ -107,6 +107,8 @@ ExternalProject_Add(libswarmio
 # Finish
 swarmio_build_component_finish(libswarmio)
 
+install(DIRECTORY ${LIBSWARMIO_ROOT}/ DESTINATION ".")
+
 # Build ROS node
 if (SWARMIO_BUILD_ROS_NODE)
 
@@ -165,5 +167,5 @@ if (SWARMIO_BUILD_ROS_NODE)
 
     # Finish
     swarmio_build_component_finish(swarmros ${SWARMIO_ROS_PREFIX})
-
+    install(DIRECTORY swarmros-${SWARMIO_TARGET_ARCHITECTURE}-output/ DESTINATION ".")
 endif()
