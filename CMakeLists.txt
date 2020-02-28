@@ -15,7 +15,7 @@ set (SWARMIO_SUBPROJECT_HOST_ARGS
 # Define common arguments for projects built for the target architecture
 set (SWARMIO_SUBPROJECT_TARGET_ARGS
     "-DCMAKE_STAGING_PREFIX=<INSTALL_DIR>"
-    "-DCMAKE_MODULE_PATH=./cmake/packages"
+    "-DCMAKE_MODULE_PATH=${CMAKE_CURRENT_SOURCE_DIR}/cmake/packages"
 )
 
 #setting clang as compiler
