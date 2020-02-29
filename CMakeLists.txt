@@ -8,7 +8,7 @@ project(swarmio VERSION 0.9)
 include(ExternalProject)
 
 set(swarmio_DIR
-"./libswarmio")
+"./packages/cmake")
 
 # Define common arguments for projects built for the host architecture
 set (SWARMIO_SUBPROJECT_HOST_ARGS
