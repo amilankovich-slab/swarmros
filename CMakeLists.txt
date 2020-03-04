@@ -7,9 +7,6 @@ project(swarmio VERSION 0.9)
 # Use ExternalProject for the superbuild
 include(ExternalProject)
 
-set(swarmio_DIR
-"./cmake/packages")
-
 # Define common arguments for projects built for the host architecture
 set (SWARMIO_SUBPROJECT_HOST_ARGS
     "-DCMAKE_INSTALL_PREFIX=<INSTALL_DIR>"

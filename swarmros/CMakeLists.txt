@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 3.5)
 project(swarmros CXX)
 
 # Enforce C++17
-include("${CMAKE_CURRENT_LIST_DIR}/../cmake/helpers/cxx-standard.cmake")
+include("${CMAKE_CURRENT_LIST_DIR}/cmake/helpers/cxx-standard.cmake")
 
 # Find required packages
 find_package(swarmio REQUIRED)
