@@ -3,7 +3,7 @@
 
   <!-- Package info -->
   <name>swarmros</name>
-  <version>0.3.3</version>
+  <version>0.3.4</version>
   <description>SwarmIO communications bridge for ROS</description>
   <maintainer email="akos.milankovich@search-lab.hu">Ákos Milánkovich</maintainer>
   <license>Apache 2.0</license>
