@@ -18,6 +18,8 @@ set (SWARMIO_SUBPROJECT_TARGET_ARGS
     "-DCMAKE_MODULE_PATH=${CMAKE_CURRENT_SOURCE_DIR}/cmake/packages"
 )
 
+set (LIBSWARMIO_ROOT <INSTALL_DIR>)
+
 #setting clang as compiler
 set (CMAKE_C_COMPILER 
             "/usr/bin/clang")
@@ -128,11 +130,12 @@ if (SWARMIO_BUILD_ROS_NODE)
         replxx 
         g3log
         libconfig 
-	sodium
+        sodium
         libswarmio
     )
 
     # Determine ROS prefix
+    set(SWARMIO_ROS_PREFIX <DESTDIR>)
     if ("${SWARMIO_ROS_PREFIX}" STREQUAL "")
         if (EXISTS "${SWARMIO_SYSROOT}/opt/ros/melodic")
             set(SWARMIO_ROS_PREFIX "/opt/ros/melodic")
